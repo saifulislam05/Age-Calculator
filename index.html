@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="flex flex-col items-center py-5 ">
+  <div class="wrapper w-screen h-screen flex flex-col justify-center items-center">
+    <header class="mt-3 mb-6">
+      <h1 class="text-5xl font-bold text-center">Age Calculator</h1>
+    </header>
+    <section>
+      <p class="pb-3 text-center">Chosse Your Date of Birth below</p>
+      <div class="input_wrapper flex flex-col items-center gap-4">
+        <input id="input" type="date" placeholder="select your date birth"
+          class="input input-bordered input-primary w-full max-w-xs" />
+        <button id="calculateBtn" class="btn btn-secondary">Calculate</button>
+      </div>
+
+      <div id="outPut" ">
+        <div class="output_wrapper w-max flex gap-10 mx-auto my-9">
+          <div class="flex flex-col justify-center items-center w-24 h-24 border rounded-md text-primary">
+            <p id="years" class="text-3xl">0</p>
+            <p class="text-md tracking-wide">Years</p>
+          </div>
+          <div class="flex flex-col justify-center items-center w-24 h-24 border rounded-md text-primary">
+            <p id="months" class="text-3xl">0</p>
+            <p class="text-md tracking-wide">Months</p>
+          </div>
+          <div class="flex flex-col justify-center items-center w-24 h-24 border rounded-md text-primary">
+            <p id="days" class="text-3xl">0</p>
+            <p class="text-md tracking-wide">Days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
